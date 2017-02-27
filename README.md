@@ -1,10 +1,47 @@
-# Chrome
+# Media Player Tester
+
+This is a simple html page that loads an `audio` html tag, and logs in console events triggered.
+In order to work, you need to set the `URL` property n `index.js` to a valid mp3 or ogg source.
+
+Every event log contains the type of event and a snapshot of the media element when the event was triggered.
+
+Example:
+```json
+{
+   "type": "event",
+   "name": "suspend",
+   "time": "2017-02-27T18:09:42.206Z",
+   "media": {
+      "currentTime": 0,
+      "duration": 299.410583,
+      "ended": false,
+      "error": null,
+      "paused": true,
+      "played": [],
+      "buffered": [{
+         "position": 0,
+         "start": 0,
+         "end": 264.911
+      }],
+      "seekable": [{
+         "position": 0,
+         "start": 0,
+         "end": 299.410583
+      }],
+      "seeking": false
+   }
+}
+```
+
+# Test results
+
+## Chrome
 
 256K connection
 
 We load the page, wait for "loadedmetadata", and "seek" at 60%
 
-## SUMMARY
+### SUMMARY
 
 ```javascript
 [
@@ -302,7 +339,7 @@ We load the page, wait for "loadedmetadata", and "seek" at 60%
 ]
 ```
 
-## DETAILED
+### DETAILED
 
 ```javascript
 [
@@ -2274,7 +2311,7 @@ We load the page, wait for "loadedmetadata", and "seek" at 60%
 ```
 
 
-# Safari
+## Safari
 
 256K connection
 
@@ -2292,7 +2329,7 @@ We could then, click "play" again
 
 
 
-## SUMMARY
+### SUMMARY
 
 ```javascript
 [
@@ -2516,7 +2553,7 @@ We could then, click "play" again
 ```
 
 
-## DETAILED
+### DETAILED
 
 ```javascript
 [
