@@ -35,6 +35,15 @@ Example:
 
 # Test results
 
+## Summary
+
+* [Chrome](#chrome)
+  * [Summary](#summary)
+  * [Detailed](#detailed)
+* [Safari](#safari)
+  * [Summary](#summary-1)
+  * [Detailed](#detailed-1)
+
 ## Chrome
 
 256K connection
