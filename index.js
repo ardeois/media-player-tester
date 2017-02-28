@@ -1,4 +1,4 @@
-var URL = null;
+var URL = 'http://localhost:10001/mobile.landr.app/demo_full/1_original.mp3';
 
 if (URL === null) {
   throw 'Please set `URL` property in index.js';
@@ -133,8 +133,9 @@ $(document).ready(function() {
 	});
 
 	$('#log').on('click', function() {
-		var logs = player.getLogs();
-		console.log(JSON.stringify(logs));
+		var logs = JSON.stringify(player.getLogs());
+		console.log(logs);
+    $('#logs').val(logs);
 	});
 	
 });
