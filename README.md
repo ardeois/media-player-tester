@@ -45,11 +45,14 @@ http-server .
 ## Summary
 
 * [Chrome](#chrome)
-  * [Summary](#summary)
+  * [Summary](#summary-1)
   * [Detailed](#detailed)
 * [Safari](#safari)
-  * [Summary](#summary-1)
+  * [Summary](#summary-2)
   * [Detailed](#detailed-1)
+* [IE 11](#ie-11)
+  * [Summary](#summary-3)
+  * [Detailed](#detailed-2)
 
 ## Chrome
 
